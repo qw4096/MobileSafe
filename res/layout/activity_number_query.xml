@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itgold="http://schemas.android.com/apk/res/com.itgold.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="号码归属地查询" />
+
+    <EditText
+        android:id="@+id/naq_et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/et_input_selector"
+        android:hint="请输入要查询的号码 " />
+
+    <Button
+        android:id="@+id/naq_btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/btn_primary_selector"
+        android:text="查询"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/naq_tv_address"
+        style="@style/NormalTextStyle"
+        android:layout_margin="8dp"
+        android:text="归属地:" />
+
+</LinearLayout>

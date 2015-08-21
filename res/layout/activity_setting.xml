@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itgold="http://schemas.android.com/apk/res/com.itgold.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="设置中心" />
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/setting_siv_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        itgold:itbackground="first"
+        itgold:title="设置自动更新" />
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/setting_siv_callsmssafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="last"
+        itgold:title="骚扰拦截设置" />
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/setting_siv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        itgold:itbackground="first"
+        itgold:title="归属地显示设置" />
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/setting_siv_address_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="last"
+        itgold:title="归属地风格设置"
+        itgold:toggleEnable="false" />
+
+</LinearLayout>

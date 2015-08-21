@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itgold="http://schemas.android.com/apk/res/com.itgold.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="常用工具" />
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_numberaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        itgold:title="号码归属地查询"
+        itgold:toggleEnable="false" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_commonnum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="last"
+        itgold:title="常用号码查询"
+        itgold:toggleEnable="false" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_smsbackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        itgold:title="短信备份"
+        itgold:toggleEnable="false" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_smsrestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="last"
+        itgold:title="短信还原"
+        itgold:toggleEnable="false" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_applock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="clickAppLock"
+        itgold:title="程序锁管理"
+        itgold:toggleEnable="false" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_watchdog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="middle"
+        itgold:title="开启电子狗服务1"
+        itgold:toggleEnable="true" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+    <com.itgold.mobilesafe.view.SettingItemView
+        android:id="@+id/ct_siv_watchdog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        itgold:itbackground="last"
+        itgold:title="开启电子狗服务2"
+        itgold:toggleEnable="true" >
+    </com.itgold.mobilesafe.view.SettingItemView>
+
+</LinearLayout>

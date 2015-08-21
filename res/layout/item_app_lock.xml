@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/item_al_iv_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/item_al_iv_lock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/list_button_lock_default" />
+
+    <TextView
+        android:id="@+id/item_al_tv_name"
+        style="@style/NormalTextStyle"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toLeftOf="@id/item_al_iv_lock"
+        android:layout_toRightOf="@id/item_al_iv_icon"
+        android:singleLine="true"
+        android:text="应用名称asfda" />
+
+</RelativeLayout>

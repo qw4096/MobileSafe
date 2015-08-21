@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.itgold.mobilesafe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="手机杀毒" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp" >
+
+        <RelativeLayout
+            android:id="@+id/aa_progress_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/global_blue" >
+
+            <com.github.lzyzsd.circleprogress.ArcProgress
+                android:id="@+id/aa_arc_progress"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                custom:arc_bottom_text="扫描中"
+                custom:arc_bottom_text_size="14sp"
+                custom:arc_progress="55"
+                custom:arc_stroke_width="10dp"
+                custom:arc_suffix_text_padding="3dp"
+                custom:arc_suffix_text_size="22sp"
+                custom:arc_text_color="#ffffff" />
+
+            <TextView
+                android:id="@+id/aa_tv_packageName"
+                style="@style/NormalTextStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:singleLine="true"
+                android:text="应用的包名"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/aa_result_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/global_blue"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/aa_tv_result"
+                style="@style/NormalTextStyle"
+                android:text="结果"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/aa_btn_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/btn_primary_selector"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="重新扫描"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aa_animator_container"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/aa_iv_left"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/aa_iv_right"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/aa_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/TitleBarStyle"
+        android:text="软件管理" />
+
+    <!-- 内部存储 -->
+
+    <com.itgold.mobilesafe.view.ProgressDesView
+        android:id="@+id/am_pdv_rom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- sd存储 -->
+
+    <com.itgold.mobilesafe.view.ProgressDesView
+        android:id="@+id/am_pdv_sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/am_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true" >
+        </ListView>
+
+        <!-- 加载更多 -->
+
+        <include layout="@layout/public_loading" />
+
+        <TextView
+            android:id="@+id/am_tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffcccccc"
+            android:padding="4dp"
+            android:text="用户程序(xxx个)"
+            android:textColor="#000000" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">黄金卫士</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sample_device_admin_description">黄金卫士，保护您的数据安全</string>
+    <string name="sample_device_admin">黄金卫士</string>
+    <string name="accessibility_service_description">金科技程序锁保护您的应用</string>
+    <string name="crash_toast_text">bug正在修复中....</string>
+    <string name="crash_dialog_title">CrashTest has crashed</string>
+    <string name="crash_dialog_text">An unexpected error occurred forcing the
+    application to stop. Please help us fix this by sending us error data,
+    all you have to do is click OK.</string>
+    <string name="crash_dialog_comment_prompt">You might add your comments about the problem below:</string>
+    <string name="crash_dialog_ok_toast">Thank you !</string>
+    
+    <string name="crash_user_email_label">xxxx@gmail.com</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="global_blue">#459FD7</color>
+    <color name="btn_normal_color">#ffffff</color>
+    <color name="btn_pressed_color">#99ffcc</color>
+    <color name="textColorPrimary">#ffffffff</color>
+    <color name="textColorPrimaryDark">#ff000000</color>
+    <color name="lock_selected">#0079FF</color>
+
+</resources>

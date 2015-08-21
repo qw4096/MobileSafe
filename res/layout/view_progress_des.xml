@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/view_pdv_tv_title"
+        style="@style/NormalTextStyle"
+        android:layout_width="50dp"
+        android:text="内存:"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ProgressBar
+            android:id="@+id/view_pdv_pb_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:progressDrawable="@drawable/progress_horizontal" />
+
+        <TextView
+            android:id="@+id/view_pdv_tv_left"
+            style="@style/NormalTextStyle"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:text="xxx已用"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/view_pdv_tv_right"
+            style="@style/NormalTextStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:text="xxx可用"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+</LinearLayout>
